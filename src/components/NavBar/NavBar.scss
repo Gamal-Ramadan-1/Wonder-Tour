@@ -1,7 +1,50 @@
 @import "../../Main-Scss/Vars.scss";
 
-div {
-    h1 {
-        color: $Only;
+.desktop {
+    .logo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        a {
+            img {
+                max-width: 225px;
+                max-height: 190px;
+            }
+        }
+    }
+
+    .clock,
+    .phone-number {
+        i,
+        svg {
+            color: $Sucsess-Color;
+            font-weight: bolder;
+        }
+
+        p {
+            transition: all 0.2s ease-in-out;
+        }
+    }
+
+    .phone-number:hover {
+        color: $Sucsess-Color;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+}
+.list-menu {
+    background-color: $Dark-Color !important;
+    svg,
+    i {
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        :hover {
+            color: $Sucsess-Color;
+            transition: all 0.3s ease-in-out;
+        }
     }
 }

@@ -1,0 +1,35 @@
+@import "../../Main-Scss/Vars.scss";
+
+.get-free-quote {
+    border: 1.6px solid $Sucsess-Color !important;
+    border-radius: 0px !important;
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    color: black !important;
+}
+
+.get-free-quote::before {
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 100%;
+    background-color: #50ba87;
+    top: 0px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale3d(0.7, 1, 1);
+    right: 10px;
+    z-index: -1;
+}
+
+.get-free-quote:hover::before {
+    transition: all 0.3s ease;
+    opacity: 1;
+    transform: scale3d(1.3, 1, 1);
+}
+
+.get-free-quote:hover {
+    color: white !important;
+}
