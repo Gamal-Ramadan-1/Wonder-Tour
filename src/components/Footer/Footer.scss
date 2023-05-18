@@ -1,0 +1,25 @@
+@import "../../Main-Scss//Vars.scss";
+
+footer {
+    background-color: $Dark-Color;
+    .contact-us {
+        i,
+        svg {
+            color: $Sucsess-Color;
+            font-size: 20px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover {
+            color: $Sucsess-Color;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.copyright {
+    background-color: $CopyRight;
+}

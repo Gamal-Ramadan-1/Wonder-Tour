@@ -5,6 +5,7 @@ import About from './pages/About'
 import Typography from './pages/Typography'
 import ContactUs from './pages/ContactUs'
 import NoPage from './pages/NoPage'
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
-
+      <Footer />
     </>
   );
 }
