@@ -3,7 +3,7 @@
 .desktop {
     .logo {
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: center;
 
         a {
@@ -33,18 +33,64 @@
         transition: all 0.2s ease-in-out;
     }
 }
-.list-menu {
-    background-color: $Dark-Color !important;
-    svg,
-    i {
-        color: white;
-        font-size: 18px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
 
-        :hover {
+.mobile {
+    position: relative;
+    box-shadow: 0.5px 0.5px 6px gray;
+    background-color: white;
+    img {
+        max-width: 200px;
+    }
+    i,
+    svg {
+        font-size: 30px;
+    }
+}
+.offcanvas-header {
+    justify-content: center !important;
+    position: relative;
+    :after {
+        content: "";
+        width: 100%;
+        height: 0.1px;
+        position: absolute;
+        background-color: rgb(208, 205, 205);
+        bottom: 0;
+        left: 0;
+    }
+}
+.offcanvas-body {
+    padding: 0px !important;
+    margin-top: 20px !important;
+    ul {
+        padding: 0px;
+        list-style: none;
+        .active-mob {
+            background-color: $Sucsess-Color;
+            a {
+                color: white;
+            }
+        }
+        li {
+            a {
+                text-decoration: none;
+                color: #151515;
+                font-weight: 300;
+            }
+        }
+    }
+}
+.ellipsis-vertical{
+    #content{
+        position: absolute;
+        top: 35px;
+        right: -23px;
+        width: 250px;
+        z-index: -1;
+        box-shadow: 1px 1px 10px rgb(169, 169, 169);
+        display: none;
+        i,svg{
             color: $Sucsess-Color;
-            transition: all 0.3s ease-in-out;
         }
     }
 }

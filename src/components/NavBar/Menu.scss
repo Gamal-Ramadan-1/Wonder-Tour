@@ -1,0 +1,42 @@
+@import "../../Main-Scss/Vars.scss";
+
+.list-menu {
+    background-color: $Dark-Color !important;
+    svg,
+    i {
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        :hover {
+            color: $Sucsess-Color;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    ul {
+        margin: 0px;
+        li {
+            list-style: none;
+            float: left;
+            font-size: 19px;
+            transition: all 0.2s ease-in-out;
+            a {
+                text-decoration: none;
+                color: white !important;
+            }
+        }
+        li:hover {
+            background-color: rgba($color: white, $alpha: 0.2);
+            transition: all 0.2s ease-in-out;
+        }
+        .active {
+            background-color: rgba($color: white, $alpha: 0.1);
+            transition: all 0.2s ease-in-out;
+        }
+        .active:hover {
+            background-color: rgba($color: white, $alpha: 0.2);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
