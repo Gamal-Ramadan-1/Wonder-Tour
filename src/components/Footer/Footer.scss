@@ -3,6 +3,28 @@
 footer {
     background-color: $Dark-Color;
     .contact-us {
+        @media screen and (width: 768px) {
+            .content {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 0px !important;
+                margin: 0px !important;
+                .location-icon {
+                    margin-top: 15px !important;
+                }
+            }
+            h5 {
+                text-align: left !important;
+            }
+        }
+        @media screen and (width: 426px) {
+            .content {
+                .location-icon {
+                    margin-top: 0px !important;
+                }
+            }
+        }
         i,
         svg {
             color: $Sucsess-Color;
@@ -16,6 +38,31 @@ footer {
         a:hover {
             color: $Sucsess-Color;
             transition: all 0.3s ease-in-out;
+        }
+    }
+    .pepular-news {
+        @media screen and (width: 768px) {
+            .content {
+                padding: 0px !important;
+                margin: 0px !important;
+            }
+            h5 {
+                text-align: left !important;
+            }
+        }
+        h5 {
+            color: white;
+            text-transform: capitalize;
+        }
+        a {
+            color: $Sucsess-Color;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #50ba87;
+        }
+        .date {
+            color: #aaa;
         }
     }
 }
