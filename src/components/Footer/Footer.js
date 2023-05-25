@@ -66,6 +66,22 @@ const Footer = () => {
 
             </footer>
             <div className="copyright">
+                <div className="container">
+                    <div className="row py-4 gy-3">
+                        <div className="col-lg-4 col-md-4 col-sm-12 order-md-1 order-2">
+                            <p className='text-md-start text-center m-0'>© 2023 Wonder Tour. All Rights Reserved. Design by <a href='https://github.com/Gamal-Ramadan-1' target='_blank' className='make-by d-lg-inline-block d-block'> Gamal Ramadan </a></p>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12 order-md-2 order-1 text-center">
+                            <i className="fa-brands fa-facebook-f mx-2"></i>
+                            <i className="fa-brands fa-twitter mx-2"></i>
+                            <i className="fa-brands fa-google-plus-g mx-2"></i>
+                            <i className="fa-brands fa-instagram mx-2"></i>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-sm-12 order-md-3 order-3 text-md-end text-center">
+                            <p className='m-0 privacy-policy'><span> Privacy Policy </span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )

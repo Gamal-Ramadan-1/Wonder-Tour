@@ -96,27 +96,54 @@ footer {
         }
         ul {
             list-style: none;
+            position: relative;
             li {
-                position: relative;
-                ::before {
-                    content: "";
-                    background-color: $Sucsess-Color;
-                    border-radius: 50%;
-                    width: 9px;
-                    height: 9px;
-                    position: absolute;
-                    left: -20px;
-                    bottom: 8px;
-                }
                 a {
                     text-decoration: none;
-                    color: white !important;
+                    color: white;
                 }
             }
+            a:hover {
+                color: $Sucsess-Color !important;
+            }
+        }
+        ul li::before {
+            content: "";
+            background-color: $Sucsess-Color;
+            border-radius: 50%;
+            width: 9px;
+            height: 9px;
+            position: absolute;
+            margin: 8px 0px 0px -17px;
         }
     }
 }
 
 .copyright {
     background-color: $CopyRight;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+    p {
+        .make-by {
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+        }
+        .make-by:hover {
+            color: #50ba87;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    i:hover,
+    svg:hover {
+        color: $Sucsess-Color;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .privacy-policy span:hover {
+        color: $Sucsess-Color;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
 }
