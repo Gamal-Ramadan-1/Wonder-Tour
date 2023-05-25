@@ -3,7 +3,7 @@
 footer {
     background-color: $Dark-Color;
     .contact-us {
-        @media screen and (width: 768px) {
+        @media screen and (max-width: 768px) {
             .content {
                 display: flex;
                 justify-content: space-around;
@@ -18,8 +18,9 @@ footer {
                 text-align: left !important;
             }
         }
-        @media screen and (width: 426px) {
+        @media screen and (max-width: 426px) {
             .content {
+                display: inline-block;
                 .location-icon {
                     margin-top: 0px !important;
                 }
@@ -41,7 +42,7 @@ footer {
         }
     }
     .pepular-news {
-        @media screen and (width: 768px) {
+        @media screen and (max-width: 768px) {
             .content {
                 padding: 0px !important;
                 margin: 0px !important;
@@ -63,6 +64,55 @@ footer {
         }
         .date {
             color: #aaa;
+        }
+    }
+    .quick-links {
+        @media screen and (max-width: 768px) {
+            ul {
+                li {
+                    ::before {
+                        left: -5px !important;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 426px) {
+            ul {
+                li {
+                    ::before {
+                        left: 16px !important;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 376px) {
+            ul {
+                li {
+                    ::before {
+                        left: 0px !important;
+                    }
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            li {
+                position: relative;
+                ::before {
+                    content: "";
+                    background-color: $Sucsess-Color;
+                    border-radius: 50%;
+                    width: 9px;
+                    height: 9px;
+                    position: absolute;
+                    left: -20px;
+                    bottom: 8px;
+                }
+                a {
+                    text-decoration: none;
+                    color: white !important;
+                }
+            }
         }
     }
 }

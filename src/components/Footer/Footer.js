@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.scss'
+import Scale3d from "../Buttons/Scale3d"
 const Footer = () => {
     return (
         <>
@@ -28,8 +29,8 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-12 pepular-news">
-                            <h5 className='text-lg-start text-center'>pepular news</h5>
-                            <div className='ms-lg-0 ms-5 ps-lg-0 ps-5 content'>
+                            <h5 className='text-lg-start text-center mb-4'>pepular news</h5>
+                            <div className='ms-lg-0 ms-5 ps-lg-0 ps-5 content '>
                                 <p>
                                     <a href='http//Google.com' className='mb-1'>Your Personal Guide to 5 Best <br className='d-lg-block d-inline-block' />  Places to Visit on Earth </a>
                                 </p>
@@ -40,7 +41,26 @@ const Footer = () => {
                                 <p className="date">may 04,2019</p>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 col-sm-12"></div>
+                        <div className="col-lg-4 col-md-6 col-sm-12 quick-links">
+                            <h5 className='text-light mb-4'>quick links</h5>
+                            <ul className='d-lg-inline-block d-none'>
+                                <li className='text-capitalize mb-2 w-50 float-start'><a href="http//Google.com"> about us </a></li>
+                                <li className='text-capitalize mb-2 w-50 float-end'><a href="http//Google.com"> gallery </a></li>
+                                <li className='text-capitalize mb-2 w-50 float-start'><a href="http//Google.com"> our tours </a></li>
+                                <li className='text-capitalize mb-2 w-50 float-end'><a href="http//Google.com"> blog </a></li>
+                                <li className='text-capitalize mb-2'><a href="http//Google.com"> our team </a></li>
+                            </ul>
+                            <ul className='d-lg-none d-inline-block'>
+                                <div className="row">
+                                    <li className='text-capitalize mb-2 col-4 text-center'><a href="http//Google.com"> about us </a></li>
+                                    <li className='text-capitalize mb-2 col-4 text-center'><a href="http//Google.com"> our tours </a></li>
+                                    <li className='text-capitalize mb-2 col-4 text-center'><a href="http//Google.com"> our team </a></li>
+                                    <li className='text-capitalize mb-2 col-4 text-center'><a href="http//Google.com"> gallery </a></li>
+                                    <li className='text-capitalize mb-2 col-4 text-center'><a href="http//Google.com"> blog </a></li>
+                                </div>
+                            </ul>
+                            <Scale3d Text="get in touch" Classes="py-3 px-5 background text-light" />
+                        </div>
                     </div>
                 </div>
 

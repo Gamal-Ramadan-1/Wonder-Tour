@@ -8,6 +8,10 @@
     position: relative !important;
     overflow: hidden !important;
     color: black !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .get-free-quote::before {
@@ -32,4 +36,10 @@
 
 .get-free-quote:hover {
     color: white !important;
+}
+.background {
+    background-color: $Sucsess-Color !important;
+}
+.background:hover {
+    background-color: #50ba87 !important;
 }
