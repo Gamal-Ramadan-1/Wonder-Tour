@@ -6,6 +6,7 @@ import Typography from './pages/Typography'
 import ContactUs from './pages/ContactUs'
 import NoPage from './pages/NoPage'
 import Footer from "./components/Footer/Footer";
+import UpToTop from "./components/Buttons/UpToTop";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="*" element={<NoPage />} />
       </Routes>
       <Footer />
+      <UpToTop />
     </>
   );
 }

@@ -1,0 +1,16 @@
+@import "../../Main-Scss//Vars.scss";
+.up {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: $Sucsess-Color !important;
+    border-radius: 10px !important;
+    cursor: pointer;
+    color: white;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
