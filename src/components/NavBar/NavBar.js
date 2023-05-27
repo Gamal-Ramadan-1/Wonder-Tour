@@ -55,7 +55,7 @@ const NavBar = () => {
     }
     return (
         <>
-            <section className="desktop d-lg-inline-block d-none w-100">
+            <section className="desktop d-lg-inline-block d-none w-100 float-start">
                 <div className="container">
                     <div className="row my-4">
                         <div className="col-3 logo">
@@ -92,7 +92,7 @@ const NavBar = () => {
                 </div>
             </section>
             <Menu />
-            <div className="mobile d-lg-none d-inline-block w-100">
+            <div className="mobile d-lg-none d-inline-block w-100 float-start">
                 <div className='container'>
                     <div className='row py-3 justify-content-between'>
                         <div className='col-1 pe-0' onClick={handleShow}>

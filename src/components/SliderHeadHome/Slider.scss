@@ -1,0 +1,108 @@
+@import "../../Main-Scss/Vars.scss";
+
+.swiper {
+    height: 550px;
+    float: left;
+    width: 100%;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+    margin-right: 100px;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 13px !important;
+    height: 13px !important;
+    background-color: $Sucsess-Color !important;
+    border-radius: 2px !important;
+}
+
+.slider-img-1,
+.slider-img-2,
+.slider-img-3 {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    clear: both;
+    h6 {
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    h1 {
+        font-size: 70px;
+        letter-spacing: 2px;
+        span {
+            font-weight: 800;
+        }
+    }
+}
+.slider-img-1 {
+    background-image: url("../../assets/Imgs/slider-4-slide-1-1920x678.jpg");
+}
+
+.slider-img-2 {
+    background-image: url("../../assets/Imgs/slider-4-slide-2-1920x678.jpg");
+}
+
+.slider-img-3 {
+    background-image: url("../../assets/Imgs/slider-4-slide-3-1920x678.jpg");
+}
+.border-btn {
+    border: 2px solid white !important;
+}
+.border-btn:hover {
+    border: 2px solid #50ba87 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-pagination-vertical.swiper-pagination-bullets,
+    .swiper-vertical > .swiper-pagination-bullets {
+        margin-right: 10px;
+    }
+
+    .slider-img-1,
+    .slider-img-2,
+    .slider-img-3 {
+        h6 {
+            font-size: 16px;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+        h1 {
+            font-size: 50px;
+            letter-spacing: 2px;
+            span {
+                font-size: 50px;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-pagination-vertical.swiper-pagination-bullets,
+    .swiper-vertical > .swiper-pagination-bullets {
+        margin-right: 10px;
+    }
+
+    .slider-img-1,
+    .slider-img-2,
+    .slider-img-3 {
+        h6 {
+            font-size: 16px;
+            letter-spacing: 2px;
+            font-weight: 500;
+        }
+        h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+            span {
+                font-size: 36px;
+                font-weight: 800;
+            }
+        }
+    }
+}

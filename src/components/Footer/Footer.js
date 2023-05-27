@@ -4,9 +4,9 @@ import Scale3d from "../Buttons/Scale3d"
 const Footer = () => {
     return (
         <>
-            <footer>
+            <footer className='float-start w-100 m-0'>
                 <div className="container">
-                    <div className="row py-5 gy-4 mt-5">
+                    <div className="row py-5 gy-4">
                         <div className="col-lg-4 col-md-12 col-sm-12 contact-us">
                             <h5 className='text-uppercase text-light mb-4 text-lg-start text-center'>contact us</h5>
                             <div className='ms-lg-0 ms-5 ps-lg-0 ps-5 content'>
@@ -65,11 +65,11 @@ const Footer = () => {
                 </div>
 
             </footer>
-            <div className="copyright">
+            <div className="copyright float-start w-100">
                 <div className="container">
                     <div className="row py-4 gy-3">
                         <div className="col-lg-4 col-md-4 col-sm-12 order-md-1 order-2">
-                            <p className='text-md-start text-center m-0'>© 2023 Wonder Tour. All Rights Reserved. Design by <a href='https://github.com/Gamal-Ramadan-1' target='_blank' className='make-by d-lg-inline-block d-block'> Gamal Ramadan </a></p>
+                            <p className='text-md-start text-center m-0'>© 2023 Wonder Tour. All Rights Reserved. Design by <a href='https://github.com/Gamal-Ramadan-1' target='_blank' rel="noreferrer" className='make-by d-lg-inline-block d-block'> Gamal Ramadan </a></p>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-12 order-md-2 order-1 text-center">
                             <i className="fa-brands fa-facebook-f mx-2"></i>

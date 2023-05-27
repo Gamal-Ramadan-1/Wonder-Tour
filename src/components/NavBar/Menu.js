@@ -29,7 +29,7 @@ function Menu() {
         $('#typography').css("background-color", "transparent")
     }
     return (
-        <section className='list-menu d-lg-inline-block d-none w-100'>
+        <section className='list-menu d-lg-inline-block d-none w-100 float-start'>
             <Container>
                 <Row>
                     <Col lg={8} className='d-flex justify-content-start align-items-center'>
